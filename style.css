@@ -33,6 +33,8 @@
     text-decoration: none;
     height: auto;
     overflow-x: hidden;
+
+    
 }
 
 html {
@@ -300,6 +302,8 @@ nav a.active {
     /* display: flex; */
     /* justify-content: center;
     align-items: center; */
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .about__me-img {
@@ -445,9 +449,11 @@ header {
     transform: translateX(-50%);
     margin-top: 5rem;
     border-radius: 12rem 12rem 12rem 12rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
     
 }
-
+.about__me
 
 /* ========= SCROLL DOWN ========= */
 .scroll__down {
@@ -567,7 +573,7 @@ footer a {
     padding: 0;
     z-index: 1
 }
-
+.header__me
 .swiper-vertical>.swiper-wrapper {
     flex-direction: column
 }
@@ -577,11 +583,12 @@ footer a {
     width: 100%;
     height: 100%;
     z-index: 1;
-    display: flex;
-    transition-property: transform;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
     box-sizing: content-box
 }
-
+.swiper-slide
 .swiper-android .swiper-slide,
 .swiper-wrapper {
     transform: translate3d(0px, 0px, 0px)
@@ -729,7 +736,7 @@ footer a {
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-   justify-content: space-between;
+
 }
 
 .portfolio__item {
